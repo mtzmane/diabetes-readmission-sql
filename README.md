@@ -8,6 +8,25 @@ The analysis focuses on patient demographics, length of hospital stay, treatment
 
 The project demonstrates a reproducible SQL workflow for data preparation, cohort construction, validation, and descriptive analysis using DuckDB.
 
+## Table of Contents
+
+- [Objectives](#objectives)
+- [Dataset](#dataset)
+- [Data Preparation](#data-preparation)
+- [Tools](#tools)
+- [Methodology](#methodology)
+  - [Cohort Construction](#cohort-construction)
+  - [Minimum Group-Size Thresholds](#minimum-group-size-thresholds)
+  - [Analytical Approach](#analytical-approach)
+- [Key Findings](#key-findings)
+- [Repository Structure](#repository-structure)
+- [Reproducibility](#reproducibility)
+  - [Expected Validation](#expected-validation)
+- [Project Report](#project-report)
+- [Limitations](#limitations)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Objectives
 
 - Build a reproducible analytical cohort from the original hospital encounter records.
@@ -37,7 +56,7 @@ The original encounter dataset must be downloaded separately and placed in the `
 
 ## Tools
 
-- **SQL:** data cleaning, cohort construction, joins, CTEs, aggregations, and descriptive analysis.
+- **SQL:** data cleaning, cohort construction, table joins, Common Table Expressions (CTEs), conditional logic (CASE WHEN), filtering (WHERE), grouping (GROUP BY), sorting (ORDER BY), aggregations, and descriptive analysis.
 - **DuckDB:** SQL execution engine.
 - **DBeaver:** database client and query development environment.
 
@@ -119,7 +138,7 @@ The cohort construction should reproduce the following record counts:
 
 Differences may indicate issues with file preparation, paths, lookup data, or the execution of the cohort selection criteria.
 
-## Technical Report
+## Project Report
 
 The accompanying report, *Early Hospital Readmission in Patients with Diabetes: A Descriptive SQL Analysis*, provides additional methodological details, descriptive results, and interpretation.
 
