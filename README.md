@@ -19,6 +19,7 @@ The project demonstrates a reproducible SQL workflow for data preparation, cohor
   - [Minimum Group-Size Thresholds](#minimum-group-size-thresholds)
   - [Analytical Approach](#analytical-approach)
 - [Key Findings](#key-findings)
+- [Interactive Dashboard](#interactive-dashboard)
 - [Repository Structure](#repository-structure)
 - [Reproducibility](#reproducibility)
   - [Expected Validation](#expected-validation)
@@ -99,6 +100,18 @@ The analysis is descriptive. No hypothesis tests or multivariable models were pe
 
 These findings are descriptive and should be interpreted in the context of the study's cohort definitions, group sizes, and methodological limitations.
 
+## Interactive Dashboard
+
+### Executive Summary
+
+- **Dashboard overview:** Developed an interactive Tableau dashboard using the UCI Diabetes 130-US Hospitals for Years 1999–2008 dataset. The final cohort includes 69,990 patients, and the overall early readmission rate (readmission within 30 days of discharge) was 8.98%.
+- **Key findings:** Early readmission rates varied across hospital and clinical characteristics. Patients discharged to rehabilitation facilities had a rate of 26.36% (n = 1,411), compared with 6.95% among those discharged home (n = 44,322). Rates were also higher with longer stays, from 7.53% for stays of 1–3 days to 11.79% for stays of 8–14 days.
+- **Interpretation and limitations:** The dashboard presents descriptive, unadjusted comparisons across discharge destination, length of stay, clinical complexity, HbA1c measurement status, and age groups. Patients with no recorded discharge destination (n = 2,474) are not shown in the discharge destination chart. Results should be interpreted cautiously, particularly for small groups, and do not establish causal relationships.
+
+[View the dashboard on Tableau Public](https://public.tableau.com/app/profile/mane.mtz/viz/EarlyReadmissioninDiabetes/HospitalReadmissionAnalysis)
+
+![Dashboard preview](dashboard/dashboard_preview.png)
+
 ## Repository Structure
 
 ```text
@@ -113,6 +126,8 @@ diabetes-readmission-sql/
 │   ├── admission_type.csv
 │   ├── admission_source.csv
 │   └── discharge_disposition.csv
+├── dashboard/
+│   └── dashboard_preview.png
 └── docs/
     └── early_hospital_readmission_analysis.pdf
 ```
